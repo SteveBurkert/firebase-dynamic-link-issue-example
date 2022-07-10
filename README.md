@@ -1,6 +1,6 @@
 # firebase-zombie-user-example
 
-Minimal example of an issue related to the firebase android sdk. This repo only intents to showcase the problem and has no further usage.
+This repo only intents to showcase a problem related to the firebase android sdk authentication part and has no further usage.
 
 Dependencies:
 
