@@ -1,31 +1,29 @@
 # firebase-zombie-user-example
 
-Minimal example of an issue related to the 
-firebase android sdk. 
-This repo only intents to showcase the problem
-and has no further usage.
+Minimal example of an issue related to the firebase android sdk. This repo only intents to showcase the problem and has no further usage.
 
 Dependencies:
 
-firebase authentication: 
-firebase bom: 
+firebase authentication:
+firebase bom:
 
-## How to reproduce the problem
+## HowTo
 
-1. start the app 
-2. sign in using test credentials
-3. sign in anonymously _over_ the current account
+This example application demonstrates a normal registration flow.
 
-Watch the logs while doing so. 
-The app will sign in anonymously on first app start. 
-The logs will reflect that.
-After you signed in with a "real" (although test) account,
-the app will display the status and variables given by the sdk.
-It will also display the authentication provider, used by this account.
+The app is started in a new session and FirebaseAuth will be initialized. Afterwards the user gets signed in anonymously, if there is no current registration.
 
-What to expect after signing in anonymously over the current account?
+Now the user can sign in using a "real" provider and it's account will be linked to the previous anonymous account.
 
-The sdk will return that the current user is not an anonymously signed in user,
-although it is. The current provider will be 'firebase'.
+So far, so simple.
+
+To get the app in an invalid state, one has to do the steps above and now sign in anonymously OVER the current "real" account. Although this seems wrong, the sign in will succeed,
+but the newly created anon account will
+
+- return FALSE for 'isAnonymous'
+- only contain 1 provider: firebase
+
+Since our logic checks, that you can only log in / sign in, if `FirebaseUser.isAnonymous` is `TRUE`, we can never sign in again, without logging out the user first.
+
 
 

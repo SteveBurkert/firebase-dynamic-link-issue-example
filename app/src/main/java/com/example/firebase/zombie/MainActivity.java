@@ -32,6 +32,10 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        // 1. init auth
+        // 2. sign in anonymously
+        // 3. Wait for user to sign in with real account and link it to anon
+
         initializeFirebaseAuth();
         setupButtons();
         binding.tvLog.setMovementMethod(new ScrollingMovementMethod());
@@ -46,10 +50,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initializeFirebaseAuth() {
-        // Make sure auth is initialized, or auth state can have 3 states
-        // 1. unknown -> FirebaseUser == null
-        // 2. no user -> FirebaseUser == null
-        // 3. signed in -> -> FirebaseUser != null
         FirebaseAuth.getInstance().addAuthStateListener(new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
