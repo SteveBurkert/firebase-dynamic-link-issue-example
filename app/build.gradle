@@ -1,6 +1,5 @@
-plugins {
-    id 'com.android.application'
-}
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 android {
     compileSdk rootProject.ext.compileSdk
@@ -37,5 +36,4 @@ dependencies {
 
     implementation platform(firebase.platform)
     implementation firebase.auth
-    implementation firebase.auth_ktx
 }

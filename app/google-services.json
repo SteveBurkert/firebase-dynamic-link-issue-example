@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "698053341322",
+    "project_id": "fir-zombie-user-example",
+    "storage_bucket": "fir-zombie-user-example.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:698053341322:android:62db4cfd9fbd855c5ffd73",
+        "android_client_info": {
+          "package_name": "com.example.firebase.zombie"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "698053341322-ofe6ccg2i0tf1nrcn8lv0bst2apfkquo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGo7nxaxEUIe7NCmcvIV_zjVwSmMsHoCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "698053341322-ofe6ccg2i0tf1nrcn8lv0bst2apfkquo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

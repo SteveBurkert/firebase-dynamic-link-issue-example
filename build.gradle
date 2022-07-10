@@ -25,10 +25,8 @@ ext {
     firebase = [
             platform     : 'com.google.firebase:firebase-bom:29.1.0',
             auth         : 'com.google.firebase:firebase-auth',
-            auth_ktx     : 'com.google.firebase:firebase-auth-ktx',
 
     ]
-    timber = 'com.jakewharton.timber:timber:5.0.1'
 }
 
 allprojects {
