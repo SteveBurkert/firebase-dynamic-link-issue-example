@@ -1,0 +1,16 @@
+<resources>
+  <!-- Base application theme. -->
+  <style name="Theme.FirebaseZombieUserExample" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/purple_500</item>
+  </style>
+
+  <style name="Theme.FirebaseZombieUserExample.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+
+  <style name="Theme.FirebaseZombieUserExample.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+  <style name="Theme.FirebaseZombieUserExample.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+</resources>
