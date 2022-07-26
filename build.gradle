@@ -23,9 +23,10 @@ ext {
 
 
     firebase = [
-            platform     : 'com.google.firebase:firebase-bom:29.1.0',
-            auth         : 'com.google.firebase:firebase-auth',
-
+            platform     : 'com.google.firebase:firebase-bom:29.1.0', // Please change here
+            analytics    : 'com.google.firebase:firebase-analytics',
+            analytics_ktx: 'com.google.firebase:firebase-analytics-ktx',
+            dynamiclinks : 'com.google.firebase:firebase-dynamic-links'
     ]
 }
 

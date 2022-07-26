@@ -35,5 +35,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
     implementation platform(firebase.platform)
-    implementation firebase.auth
+    implementation firebase.analytics
+    implementation firebase.analytics_ktx
+    implementation firebase.dynamiclinks
 }
