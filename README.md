@@ -31,7 +31,7 @@ Open logcat:
 
 `adb logcat -v time -s FA FA-SVC`
 
-Next Step is ti open the application using the dynamic link `https://repoexmaple.page.link/test` 
+Next Step is to open the application using the dynamic link `https://repoexmaple.page.link/test` <-
 
 `dynamic_link_first_open` will get logged or not (Logged when a user opens the app for the first time via a Dynamic Link.) 
 
