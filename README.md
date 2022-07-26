@@ -17,8 +17,7 @@ the event is being tracked again.
 
 In order to reproduce, make sure: 
 - do not open the application on install
-- install first with an old version of bom (see above) and enable debug log
-- see that `dynamic_link_first_open` is tracked with old version 
+- see that `dynamic_link_first_open` is not tracked after clicking a dynamic link
 
 
 Console
